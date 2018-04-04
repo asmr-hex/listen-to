@@ -33,7 +33,7 @@ func (l *LogLine) GetMusic() string {
 	// the log lines are formatted s.t. everything after the 2nd column
 	// is part of the music the user is recomending.
 	for i := 2; i < len(l.Columns); i++ {
-		music = " " + l.Columns[i]
+		music += " " + l.Columns[i]
 	}
 
 	return music
